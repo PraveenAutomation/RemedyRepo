@@ -2,6 +2,7 @@ package testNg;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -29,6 +30,13 @@ public class TestNgBasics {
 	{
 		String title=driver.getTitle();
 		System.out.println(title);
+	}
+	
+	@Test
+	public void linkTest()
+	{
+		boolean b=driver.findElement(By.xpath("//a[text()='Get Started']")).isDisplayed();
+		System.out.println(b);
 	}
 	
 	
