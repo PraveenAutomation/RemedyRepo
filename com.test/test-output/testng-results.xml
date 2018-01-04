@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35187" started-at="2018-01-03T10:58:41Z" finished-at="2018-01-03T10:59:16Z">
+  <suite name="Default suite" duration-ms="107469" started-at="2018-01-04T10:36:45Z" finished-at="2018-01-04T10:38:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35187" started-at="2018-01-03T10:58:41Z" finished-at="2018-01-03T10:59:16Z">
-      <class name="testNg.TestNgBasics">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="setUp" is-config="true" duration-ms="18593" started-at="2018-01-03T16:28:41Z" finished-at="2018-01-03T16:28:59Z">
+    <test name="Default test" duration-ms="107469" started-at="2018-01-04T10:36:45Z" finished-at="2018-01-04T10:38:32Z">
+      <class name="testNg.EcDashBoardTest1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="setUp" is-config="true" duration-ms="31229" started-at="2018-01-04T16:06:45Z" finished-at="2018-01-04T16:07:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="linkTest()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="linkTest" duration-ms="190" started-at="2018-01-03T16:28:59Z" finished-at="2018-01-03T16:29:00Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="loginTest" duration-ms="17836" started-at="2018-01-04T16:07:16Z" finished-at="2018-01-04T16:07:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="tearDown" is-config="true" duration-ms="829" started-at="2018-01-03T16:29:00Z" finished-at="2018-01-03T16:29:01Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="tearDown" is-config="true" duration-ms="1295" started-at="2018-01-04T16:07:34Z" finished-at="2018-01-04T16:07:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="setUp" is-config="true" duration-ms="14966" started-at="2018-01-03T16:29:01Z" finished-at="2018-01-03T16:29:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="setUp" is-config="true" duration-ms="23127" started-at="2018-01-04T16:07:35Z" finished-at="2018-01-04T16:07:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="remedyTest()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="remedyTest" duration-ms="35" started-at="2018-01-03T16:29:15Z" finished-at="2018-01-03T16:29:16Z">
+        <test-method status="FAIL" signature="windowHandleTest()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="windowHandleTest" duration-ms="33209" started-at="2018-01-04T16:07:58Z" depends-on-methods="testNg.EcDashBoardTest1.loginTest" finished-at="2018-01-04T16:08:32Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"html/body/div[5]/div/div/div/div/div/div[2]/a/div[2]/p"}Command duration or timeout: 33.19 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'IITC-WS-QA22', ip: '10.96.97.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'Driver info: org.openqa.selenium.firefox.FirefoxDriverCapabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]Session ID: a09d06f7-e2f8-49e5-80d9-5c5e1d6f2f46*** Element info: {Using=xpath, value=html/body/div[5]/div/div/div/div/div/div[2]/a/div[2]/p}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[5]/div/div/div/div/div/div[2]/a/div[2]/p"}Command duration or timeout: 33.19 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'IITC-WS-QA22', ip: '10.96.97.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'Driver info: org.openqa.selenium.firefox.FirefoxDriverCapabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]Session ID: a09d06f7-e2f8-49e5-80d9-5c5e1d6f2f46*** Element info: {Using=xpath, value=html/body/div[5]/div/div/div/div/div/div[2]/a/div[2]/p}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)at testNg.EcDashBoardTest1.windowHandleTest(EcDashBoardTest1.java:42)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[5]/div/div/div/div/div/div[2]/a/div[2]/p"}For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'System info: host: 'IITC-WS-QA22', ip: '10.96.97.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'Driver info: driver.version: unknownat <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PKB443~1.MIS/AppData/Local/Temp/anonymous5322236212356965349webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PKB443~1.MIS/AppData/Local/Temp/anonymous5322236212356965349webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- remedyTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testNg.TestNgBasics@7113b13f]" name="tearDown" is-config="true" duration-ms="547" started-at="2018-01-03T16:29:16Z" finished-at="2018-01-03T16:29:16Z">
+        </test-method> <!-- windowHandleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testNg.EcDashBoardTest1@7113b13f]" name="tearDown" is-config="true" duration-ms="700" started-at="2018-01-04T16:08:32Z" finished-at="2018-01-04T16:08:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testNg.TestNgBasics -->
+      </class> <!-- testNg.EcDashBoardTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

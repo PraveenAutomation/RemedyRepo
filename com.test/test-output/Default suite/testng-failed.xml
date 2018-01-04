@@ -3,13 +3,14 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNg.TestNgBasics">
+      <class name="testNg.EcDashBoardTest1">
         <methods>
-          <include name="setUp"/>
-          <include name="remedyTest"/>
+          <include name="windowHandleTest"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- testNg.TestNgBasics -->
+      </class> <!-- testNg.EcDashBoardTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
